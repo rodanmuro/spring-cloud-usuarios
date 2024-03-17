@@ -1,0 +1,5 @@
+FROM openjdk:17-jdk-slim
+
+COPY target/usuarios-0.0.1-SNAPSHOT.jar usuarios-0.0.1-SNAPSHOT.jar
+
+ENTRYPOINT [ "java","-jar", "usuarios-0.0.1-SNAPSHOT.jar" ]
